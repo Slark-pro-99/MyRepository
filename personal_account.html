@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Особистий кабінет</title>
+    <link rel="icon" type="image/png" href="Favikon.png">
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="script_pers_acc.js"></script>
+  </head>
+  <body>
+	<nav class="navbar">
+      <div class="logo">
+		<a href="index.html"><img src="Logo.png" alt="Logo" width="175" height="100"/></a>
+	  </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="services.html">Послуги</a></li>
+        <li><a href="about_us.html">Про нас</a></li>
+        <li><a href="submitting_appic.html">Подача заявки</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="FAQ.html">Питання</a></li>
+	      <li><div class="user-panel" id="user-panel"></div></li>
+      </ul>
+	</nav>
+	<!--
+    <div style="background-image: linear-gradient(90deg, transparent 45%, 
+				rgba(0,0,0,.5) 65%), linear-gradient(180deg, transparent 45%, 
+				rgba(0,0,0,.5) 81%), url(1103840-620x319.jpg)">
+	</div>
+	-->	
+	<section class="dashboard-header">
+    	<h1>Особистий кабінет</h1>
+	</section>
+
+	<main class="dashboard">
+    	<div id="adminPanel" class="dashboardClass"></div>
+		<div id="caregiverPanel" class="dashboardClass"></div>
+		<div id="clientPanel" class="dashboardClass"></div>
+		<!-- <div id="commonUserPanel" class="dashboardClass"></div> -->
+	</main>
+	<footer>
+	  <section>
+	    <article>
+		  <img src="Logo.png" alt="Logo" width="175" height="100"/>
+		</article>
+		<article>
+		  <p><a href="privacy_policy.html"><b>Політика конфіденційності</b></a></p>
+		</article>
+		<article>
+		  <p>
+		    <b>Наш номер телефона: +3806789012</b>
+		  </p>
+		</article>
+		<article>
+		  <p>
+		    <b>Наш E-mail: okmnjiuhbvgztfc@gmail.com</b>
+		  </p>
+		</article>
+	  </section>
+	</footer>
+
+	<div id="toastContainer" class="toast-container"></div>
+
+    <dialog id="editModal" class="custom-modal">
+        <form id="editModalForm" method="dialog">
+            <h2 id="modalTitle">Редагування</h2>
+            <div class="modal-fields">
+				      <label>Статус: <input type="text" id="modalStatus" required></label>
+            </div>
+            <div class="modal-actions">
+                <button type="button" id="modalCancelBtn">Скасувати</button>
+                <button type="submit" id="modalSaveBtn">Зберегти</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="confirmModal" class="custom-modal confirm-modal">
+        <h2 id="confirmTitle">Підтвердження</h2>
+        <p id="confirmMessage">Ви впевнені, що хочете виконати цю дію?</p>
+        <div class="modal-actions">
+            <button id="confirmCancelBtn">Ні</button>
+            <button id="confirmConfirmBtn" class="danger-btn">Так, видалити</button>
+        </div>
+    </dialog>
+
+  </body>
+</html>

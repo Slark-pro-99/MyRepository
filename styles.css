@@ -1,0 +1,437 @@
+.user-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    bottom: 5px;
+    right: 25px;
+    z-index: 2000;
+}
+
+.profile-button,
+.user-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.profile-button:hover,
+.user-btn:hover {
+    background: #1d4ed8;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #2646a0;
+    min-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    overflow: hidden;
+}
+
+.profile-menu a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-menu a:hover {
+    background: #f3f4f6;
+}
+
+.profile-menu button {
+    display: block;
+    text-align: center;
+    background: #2646a0;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+    min-width: 220px;
+}
+
+.profile-menu button:hover {
+    background: #e40d0a;
+}
+
+.user-panel:hover .profile-menu {
+    display: block;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+        url("1103840-620x319.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 15px 35px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.hero-btn:hover {
+    background: #1d4ed8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Навигационная панель */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* Логотип */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Список ссылок */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Эффект наведения */
+.nav-links a:hover {
+    background-color: #34495e;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    height: auto;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer article {
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+}
+
+
+
+.dashboardClass {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+    gap: 35px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+}
+
+.dashboard-card {
+    background:white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.dashboard-header {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+    color:white;
+    text-align: center;
+    padding: 60px;
+}
+
+.adminGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.userGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.action-btn {
+    width: 100%;
+    padding: 16px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .25s;
+}
+
+.add {
+    background:#10b981;
+    color:white;
+}
+
+.edit {
+    background:#2563eb;
+    color:white;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.panel-form {
+    background:white;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.panel-form h2 {
+    margin-bottom: 40px;
+}
+
+.panel-form input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.panel-form button {
+    width: 100%;
+    background:#2563eb;
+    color:white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.clientsTable th, td {
+    padding: 20px;  
+}
+
+.day-header {
+    background:#dbeafe;
+    font-weight: bold;
+    font-size: 17px;
+    color:#1e3a8a;
+}
+
+.group-even {
+    background:#fafafa;
+}
+
+.group-odd {
+    background:#eef6ff;
+}
+
+#plannedVisitsTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#plannedVisitsTable td, #plannedVisitsTable th {
+    padding: 10px 14px;
+}
+
+#plannedVisitsTable tbody tr:hover {
+    background:#f8fafc;
+}
+
+
+/* --- СТИЛІ ДЛЯ TOAST сповіщень --- */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast {
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    min-width: 200px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast-success { background-color: #2ecc71; }
+.toast-error { background-color: #e74c3c; }
+
+
+/* --- СТИЛІ ДЛЯ МОДАЛЬНИХ ВІКОН <dialog> --- */
+.custom-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 450px;
+    font-family: sans-serif;
+}
+
+.custom-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.modal-fields label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.modal-fields input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#modalSaveBtn, #confirmConfirmBtn {
+    background-color: #3498db;
+    color: white;
+}
+
+.danger-btn {
+    background-color: #e74c3c !important;
+    color: white;
+}
+
+#modalCancelBtn, #confirmCancelBtn {
+    background-color: #bdc3c7;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background:white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+canvas {
+    width: 100%;
+}
