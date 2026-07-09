@@ -943,7 +943,7 @@ async function deleteRequiredMaterial(id) {
     const response = await fetch("/remove_required_material", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id_user: Number(id) })
+        body: JSON.stringify({ id_required_material: Number(id) })
     });
 
     const data = await response.json();
@@ -1250,7 +1250,7 @@ async function deleteSchedule(id) {
     const response = await fetch("/remove_schedule", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id_user: Number(id) })
+        body: JSON.stringify({ id_schedule: Number(id) })
     });
 
     const data = await response.json();
@@ -1623,7 +1623,7 @@ async function deleteReqServ(id) {
     const response = await fetch("/remove_req_serv", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id_user: Number(id) })
+        body: JSON.stringify({ id_required_service: Number(id) })
     });
 
     const data = await response.json();
@@ -1794,7 +1794,7 @@ async function deleteAssignment(id) {
     const response = await fetch("/remove_assign", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id_user: Number(id) })
+        body: JSON.stringify({ id_assignment: Number(id) })
     });
 
     const data = await response.json();
